@@ -54,6 +54,7 @@ body {
 .header__menu-list {
     display: flex;
     align-items: center;
+    padding: 0 0 0 33px;
 }
 
 .header__burger {
@@ -66,8 +67,20 @@ body {
 }
 
 .header__nav {
+    position: absolute;
+    width: 232px;
+    height: 764px;
+    background-color: var(--white-bkg);
     display: none;
 }
+
+/*.header__burger:hover +.header__nav {
+    display: block;
+}
+
+.header__nav:hover {
+    display: block;
+}*/
 
 .brand {
     display: flex;

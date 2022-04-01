@@ -45,10 +45,15 @@ body {
     align-items: center;
     min-height: 75px;
     justify-content: space-between;
+    position: relative;
 }
 
 .header__logo {
     margin: 0 41px 0 0;
+}
+
+.header__search-icon:hover {
+    transform: scale(1.2);
 }
 
 .header__menu-list {
@@ -62,11 +67,25 @@ body {
     background-color: transparent;
 }
 
+.header__burger:hover {
+    transform: scale(1.2);
+}
+
 .header__link {
     margin: 0 0 0 31px;
 }
 
+.header__person-icon:hover {
+    transform: scale(1.2);
+}
+
+.header__basket-icon:hover {
+    transform: scale(1.2);
+}
+
 .header__nav {
+    right: 0;
+    top: 75px;
     position: absolute;
     width: 232px;
     height: 764px;
@@ -74,13 +93,52 @@ body {
     display: none;
 }
 
-/*.header__burger:hover +.header__nav {
+.nav_menu {
     display: block;
+    box-shadow: -1px 1px 20px;
 }
 
-.header__nav:hover {
-    display: block;
-}*/
+.header__nav-close{
+    width: 12px;
+    height: 12px;
+    top: 16px;
+    right: 17px;
+    position: absolute;
+}
+
+.header__nav-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 37px 0 0 34px; 
+}
+
+.nav-item__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--dark_pink-color);
+    padding: 24px 0 0 33px;
+}
+
+.nav-item__title-wk {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--dark_pink-color);
+    padding: 20px 0 0 33px;
+}
+
+.nav-item__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding: 12px 0 0 55px;
+}
 
 .brand {
     display: flex;
@@ -99,11 +157,16 @@ body {
     align-items: center;
 }
 
+
+
 .brand__title {
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+
 }
 
 .brand__title-lower {
@@ -208,6 +271,47 @@ body {
     background-color: #F8F8F8;
 }
 
+.products__item-cart{
+    position: relative;
+}
+
+.products__item-cart:hover >.products__item-img {
+    filter: brightness(0.4);
+}
+
+
+.products__item-dutton {
+    display: none;
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border: 1px solid #FFFFFF;
+    background: rgba(58, 56, 56, 0.86);
+    width: 138px;
+    height: 43px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.products__item-basket {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products__item-cart:hover > .products__item-dutton {
+    display: block;
+}
+
+.products__item-cart:hover >.products__item-basket:hover > .products__item-img {
+    filter: brightness(0.4);
+}
+
 .products__item-title {
     font-style: normal;
     font-weight: 400;
@@ -248,6 +352,10 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     margin: 48px 0 95px 0;
+}
+
+.products__item-browse:hover {
+    background-color: var(--pink-color);
 }
 
 .benefits {
@@ -387,6 +495,11 @@ body {
     border: none;
 }
 
+.connection__item-send:hover {
+    background-color: var(--pink-color);
+    transform: scale(1.1);
+}
+
 .connection__item-send-text{
     font-weight: 400;
     font-size: 14px;
@@ -420,5 +533,42 @@ body {
 }
 
 .socials__item {
-    padding: 0 0 0 7px;
+    background-color:var(--white-bkg);
+    margin: 0 0 0 7px;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.socials__item:hover {
+    transform: scale(1.2);
+    background-color:var(--pink-color)
+}
+
+.socials__item-facebook {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+}
+
+.socials__item-instagram {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)   
+}
+
+.socials__item-pinterest {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+}
+
+.socials__item-twitter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
 }

@@ -85,9 +85,10 @@
                     <div class="registration__advantage">
                         <h2 class="visually-hidden">registrar</h2>
                         <fieldset class="registration__item-wrp">
-                            <label class="registration__item-name">Your Name</label>
-                            <input class="registration__list" type="text" placeholder="First name">
-                            <input class="registration__list" type="text" placeholder="Last name">
+                            <label class="registration__item-name" for="first_name">Your Name</label>
+                            <input class="registration__list" type="text" id="first_name" placeholder="First name">
+                            <label for="last_name"></label>
+                            <input class="registration__list" type="text" id="last_name" placeholder="Last name">
                         </fieldset>
                         <div class="registration__radio-wpr">
                             <input class="registration__radio" type="radio" id="contactChoice1"
@@ -97,10 +98,11 @@
                                 name="contact" value="phone">
                             <label class="registration__radio-text" for="contactChoice2">Female</label>
                         </div>
-                        <fieldset class="registration__item-wrp"s>
-                            <label class="registration__item">Login details</label>
-                            <input class="registration__list" type="text" placeholder="Email">
-                            <input class="registration__list" type="password" placeholder="Password">
+                        <fieldset class="registration__item-wrp">
+                            <label class="registration__item" for="reg_email">Login details</label>
+                            <input class="registration__list" type="text" id="reg_email" placeholder="Email">
+                            <label for="reg_password"></label>
+                            <input class="registration__list" type="password" id="reg_password" placeholder="Password">
                             </fieldset>
                         <p class="registration__list-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
                         <button class="registration__buttom">

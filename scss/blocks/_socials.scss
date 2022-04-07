@@ -1,0 +1,43 @@
+.socials {
+    background-color: $black-bkg;
+    height: 80px;
+}
+
+.socials__brand {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $benefits-bkg;
+    padding: 30px 0 30px 0; 
+}
+
+.socials__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials__list {
+    display: flex;
+    align-items: center;
+}
+
+.socials__item {
+    background-color: $white-bkg;
+    margin: 0 0 0 7px;
+    width: 32px;
+    height: 32px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials__item:hover {
+    transform: scale(1.2);
+    background-color: $pink-color;
+}
+
+.socials__item:hover .networks {
+    fill: #FFFFFF;
+}

@@ -1,0 +1,33 @@
+.nav-item__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark_pink-color;
+    padding: 24px 0 0 33px;
+}
+
+.nav-item__title-wk {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark_pink-color;
+    padding: 20px 0 0 33px;
+}
+
+.nav-item__item:hover {
+    transform: scale(1.1); 
+}
+
+.nav-item__item:active {
+    color: #E05C6E;
+}
+
+.nav-item__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding: 12px 0 0 55px;
+}

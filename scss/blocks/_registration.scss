@@ -1,0 +1,110 @@
+.registration__advantage-wpr {
+    display: flex;
+ }
+ 
+ .registration__advantage {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .registration__item-wrp {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .registration__item-name {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 16px;
+     line-height: 19px;
+     color: #222222;
+     margin: 64px 0 0 0;
+ }
+ 
+ .registration__item {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 16px;
+     line-height: 19px;
+     color: #222222;
+     margin: 33px 0 0 0;
+ }
+ 
+ .registration__list {
+     width: 359px;
+     height: 44px;
+     border: 1px solid #A4A4A4;
+     margin: 21px 0 0 0;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 13px;
+     line-height: 16px;
+     padding: 0 0 0 17px;
+ }
+ 
+ .registration__radio-wpr {
+     margin: 31px 0 0 0;
+     display: flex;
+     align-items: center;
+ 
+ }
+ 
+ .registration__list:focus {
+     background-color: $gray-bkg;
+     color: $benefits-bkg;
+ }
+ 
+ .registration__list-text {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 13px;
+     line-height: 16px;
+     color: #B1B1B1;
+     width: 359px;
+     padding: 15px 0 0 0;
+ }
+ 
+ .registration__buttom {
+     width: 167px;
+     height: 50px;
+     color: $white-bkg;
+     background-color: $dark_pink-color;
+     border: none;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 17px;
+     margin: 39px 0 96px 0;
+ }
+ 
+ .registration__buttom:hover {
+     transform: scale(1.1);
+ }
+ 
+ .registration__buttom:active {
+     background-color: $pink-color;
+ }
+ 
+ .registration__buttom-shooter {
+     padding: 0 0 0 20px;
+ }
+ 
+ .registration__radio-text {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 11px;
+     line-height: 13px;
+     padding: 0 0 0 10px;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .female {
+     margin: 0 0 0 20px;
+ }
+ 
+ .registration__radio {
+     width: 17px;
+     height: 17px;
+     border: 1px solid #A4A4A4;
+     box-sizing: border-box;
+ }

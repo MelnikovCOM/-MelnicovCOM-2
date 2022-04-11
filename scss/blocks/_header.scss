@@ -1,109 +1,124 @@
 .header {
     background-color: $black-bkg;
+
+
+    .header__wrp {
+        display: flex;
+        align-items: center;
+        min-height: 75px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .header__container {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__logo {
+        margin: 0 41px 0 0;
+    }
+
+    .header__search-icon:hover {
+        transform: scale(1.2);
+    }
+
+    .header__search-input {
+        display: none;
+        margin: 0 0 0 20px;
+        width: 200px;
+        height: 40px;
+        background: #E1E1E1;
+        border-radius: 25px 25px 25px 25px;
+        border: none;
+        outline: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #222224;
+        padding: 0 0 0 22px;
+
+        @include mobile {
+            width: 170px;
+        }
+    }
+
+    .header_loupe {
+        display: block;
+    }
+
+    .header__search-input:focus {
+        color: $white-bkg;
+        background: $sales-bkg;
+    }
+
+    .header__menu-list {
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 33px;
+    }
+
+    .header__burger {
+        border: none;
+        background-color: transparent;
+    }
+
+    .header__burger:hover {
+        transform: scale(1.2);
+    }
+
+    .header__link {
+        margin: 0 0 0 31px;
+    }
+
+    .header__person-icon:hover {
+        transform: scale(1.2);
+    }
+
+    .header__basket-icon:hover {
+        transform: scale(1.2);
+    }
+
+    .header__nav {
+        right: 0;
+        top: 75px;
+        position: absolute;
+        width: 232px;
+        height: 764px;
+        background-color: $white-bkg;
+        display: none;
+    }
+
+    .header__nav-menu {
+        display: block;
+        box-shadow: -1px 1px 20px;
+    }
+
+    .header__nav-close {
+        width: 12px;
+        height: 12px;
+        top: 16px;
+        right: 17px;
+        position: absolute;
+    }
+
+    .header__nav-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 37px 0 0 34px; 
+    }
+} 
+
+@media (max-width: $desktop-width) {
+
 }
 
-.header__wrp {
-    display: flex;
-    align-items: center;
-    min-height: 75px;
-    justify-content: space-between;
-    position: relative;
-}
-
-.header__container {
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header__logo {
-    margin: 0 41px 0 0;
-}
-
-.header__search-icon:hover {
-    transform: scale(1.2);
-}
-
-.header__search-input {
-    display: none;
-    margin: 0 0 0 20px;
-    width: 200px;
-    height: 40px;
-    background: #E1E1E1;
-    border-radius: 25px 25px 25px 25px;
-    border: none;
-    outline: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #222224;
-    padding: 0 0 0 22px;
-}
-
-.search_loupe {
-    display: block;
-}
-
-.header__search-input:focus {
-    color: $white-bkg;
-    background: $sales-bkg;
-}
-
-.header__menu-list {
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 33px;
-}
-
-.header__burger {
-    border: none;
-    background-color: transparent;
-}
-
-.header__burger:hover {
-    transform: scale(1.2);
-}
-
-.header__link {
-    margin: 0 0 0 31px;
-}
-
-.header__person-icon:hover {
-    transform: scale(1.2);
-}
-
-.header__basket-icon:hover {
-    transform: scale(1.2);
-}
-
-.header__nav {
-    right: 0;
-    top: 75px;
-    position: absolute;
-    width: 232px;
-    height: 764px;
-    background-color: $white-bkg;
-    display: none;
-}
-
-.nav_menu {
-    display: block;
-    box-shadow: -1px 1px 20px;
-}
-
-.header__nav-close {
-    width: 12px;
-    height: 12px;
-    top: 16px;
-    right: 17px;
-    position: absolute;
-}
-
-.header__nav-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    padding: 37px 0 0 34px; 
+@media (max-width: $tablet-width) {
+    .header__link {
+        display: none;
+    }
 }

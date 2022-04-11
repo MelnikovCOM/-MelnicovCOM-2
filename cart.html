@@ -15,9 +15,7 @@
     <header class="header">
         <div class="container header__wrp">
             <div class="header__container">
-                <a href="./cart.html">
-                    <img class="header__logo" src="./img/logo.png" alt="logo">
-                </a>
+                <img class="header__logo" src="./img/logo.png" alt="logo">
                 <img class="header__search-icon" id="loupe" src="./img/loupe.svg" alt="loupe">
                 <input class="header__search-input" id="search" type="text" placeholder="search">
             </div>
@@ -28,7 +26,7 @@
                     </button>
                 </li>
                 <li>
-                    <a href="#" class="header__link">
+                    <a href="./registration.html" class="header__link">
                         <img class="header__person-icon" src="./img/person.svg" alt="person">
                     </a>
                 </li>
@@ -79,61 +77,64 @@
     <main>
         <section class="home">
             <div class="container home__title-wpr">
-                <h1 class="home__title">REGISTRATION</h1>
+                <h1 class="home__title">SHOPPING CART</h1>
             </div>
         </section>
-        <div class="registration__advantage-wpr container">
-                <section class="registration">
-                    <div class="registration__advantage">
-                        <h2 class="visually-hidden">registrar</h2>
-                        <div class="registration__item-top">
-                            <fieldset class="registration__item-wrp">
-                                <label class="registration__item-name" for="first_name">Your Name</label>
-                                <input class="registration__list" type="text" id="first_name" placeholder="First name">
-                                <label for="last_name"></label>
-                                <input class="registration__list" type="text" id="last_name" placeholder="Last name">
-                            </fieldset>
-                       </div>
-                        <div class="registration__radio-wpr">
-                            <input class="registration__radio" type="radio" id="contactChoice1"
-                             name="contact" value="email">
-                            <label class="registration__radio-text" for="contactChoice1">Male</label>
-                            <input class="registration__radio registration__radio-female" type="radio" id="contactChoice2"
-                                name="contact" value="phone">
-                            <label class="registration__radio-text" for="contactChoice2">Female</label>
-                            <input class="registration__radio registration__radio-other" type="radio" id="contactChoice3"
-                             name="contact" value="other">
-                            <label class="registration__radio-text registration__radio-other-text" for="contactChoice3">Other</label>
+        <div class="container things_shipping-wrp">
+            <section class="things">
+                <h2 class="visually-hidden">best things</h2>
+                <ul class="things__list">
+                    <li class="things__item">
+                        <img class="things__item-img" src="./img/man-things-2.jpg" alt="photo man">
+                        <div class="things__item-wrp">
+                            <img class="things__item-close" id="close" src="./img/close.svg" alt="close">
+                            <h3 class="things__item-title">MANGO  PEOPLE  T-SHIRT</h3>
+                            <p class="things__item-text">Price: <span class="things__item-price">$300</span></p>
+                            <p class="things__item-text">Color: Red</p>
+                            <p class="things__item-text">Size: Xl	</p>
+                            <p class="things__item-text">Quantity:</p>
                         </div>
-                        <div class="registration__item-top">
-                            <fieldset class="registration__item-wrp">
-                                <label class="registration__item" for="reg_email">Login details</label>
-                                <input class="registration__list" type="text" id="reg_email" placeholder="Email">
-                                <label for="reg_password"></label>
-                                <input class="registration__list" type="password" id="reg_password" minlength="4" placeholder="Password">
-                            </fieldset>
+                    </li>
+                    <li class="things__item things__item-item">
+                        <img class="things__item-img" src="./img/man-things-4.jpg" alt="photo man">
+                        <div class="things__item-wrp">
+                            <img class="things__item-close" id="close" src="./img/close.svg" alt="close">
+                            <h3 class="things__item-title">MANGO  PEOPLE  T-SHIRT</h3>
+                            <p class="things__item-text">Price: <span class="things__item-price">$300</span></p>
+                            <p class="things__item-text">Color: Red</p>
+                            <p class="things__item-text">Size: Xl	</p>
+                            <p class="things__item-text">Quantity:</p>
                         </div>
-                        <p class="registration__list-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                        <button class="registration__buttom">
-                            <span class="registration__buttom-text">JOIN NOW</span>
-                            <img class="registration__buttom-shooter"src="./img/shooter.svg" alt="shooter">
-                        </button>
-                    </div>
-                </section>
-                <div>
-                    <section class="advantage">
-                        <div class="registration__advantage-2">
-                            <h2 class="advantage__title">LOYALTY HAS ITS PERKS</h2>
-                            <p class="advantage__text-advantage">Get in on the loyalty program where you can earn points and unlock serious perks. starting with these as soon as you join:</p>
-                            <p class="advantage__text">15% off welcome offer</p>
-                            <p class="advantage__text">Free shipping, returns and exchanges on all orders</p>
-                            <p class="advantage__text">$10 off a purchase on your birthday</p>
-                            <p class="advantage__text">Early access to products</p>
-                            <p class="advantage__text">Exclusive offers & rewards</p>
-                        </div>
-                    </section>
+                    </li>
+                </ul>
+                <ul class="things__list-button">
+                    <li class="things__item-button">
+                        <button class="things__title-button">CLEAR SHOPPING CART</button>
+                    </li>
+                    <li class="things__item-button">
+                        <button class="things__title-button-two">CONTINUE SHOPPING</button>
+                    </li>
+                </ul>
+            </section>
+            <section class="shipping">
+                <h2 class="shipping__title">SHIPPING ADRESS</h2>
+                <div class="shipping__item-wrp">
+                    <label for="city"></label>
+                    <input class="shipping__item" type="text" id="city" placeholder="Bangladesh">
+                    <label for="state"></label>
+                    <input class="shipping__item" type="text" id="state" placeholder="State">
+                    <label for="zip"></label>
+                    <input class="shipping__item" type="text"id="zip" placeholder="Postcode / Zip">
+                <button class="shipping__item-button">GET A QUOTE</button>
                 </div>
-        </div>
+                <div class="shipping__order">
+                    <p class="shipping__order-text">SUB TOTAL<span class="shipping__order-text-price">$900</span></p>
+                    <p class="shipping__order-title">GRAND TOTAL<span class="shipping__order-title-price">$900</span></p>
+                    <hr class="shipping__order-hr">
+                    <button class="shipping__order-button">PROCEED TO CHECKOUT</button>
+                </div>
+            </section>
+        </div>  
     </main>
     <footer>
         <section class="connection">

@@ -1,6 +1,7 @@
 @import './variables';
 @import './reset';
 @import './general';
+@import './mixins';
 
 @import './blocks/header';
 @import './blocks/nav-item';
@@ -13,3 +14,5 @@
 @import './blocks/home';
 @import './blocks/registration';
 @import './blocks/advantage';
+@import './blocks/things';
+@import './blocks/shipping';

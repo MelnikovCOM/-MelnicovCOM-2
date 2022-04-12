@@ -15,7 +15,9 @@
     <header class="header">
         <div class="container header__wrp">
             <div class="header__container">
-                <img class="header__logo" src="./img/logo.png" alt="logo">
+                <a href="./cart.html">
+                    <img class="header__logo" src="./img/logo.png" alt="logo">
+                </a>
                 <img class="header__search-icon" id="loupe" src="./img/loupe.svg" alt="loupe">
                 <input class="header__search-input" id="search" type="text" placeholder="search">
             </div>
@@ -267,7 +269,7 @@
             <div class="container socials__container">
                 <p class="socials__brand">© 2021  brand  all rights reserved.</p>
                 <ul class="socials__list">
-                    <li class="socials__item">
+                    <li class="socials__item socials-facebook">
                         <a class="socials__item-facebook" href="#">
                             <svg class="networks" xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15">
                                 <path d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15847 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z"/>
@@ -304,13 +306,13 @@
         console.log(button)
         let navigation = document.getElementById('nav');
         button.addEventListener('click', function () {
-            navigation.classList.toggle('nav_menu');
+            navigation.classList.toggle('header__nav-menu');
         });
         let popus = document.getElementById('loupe');
         console.log(popus)
         let open = document.getElementById('search');
         popus.addEventListener('click', function () {
-            open.classList.toggle('search_loupe');
+            open.classList.toggle('header_loupe');
         });
     </script>
 </body>

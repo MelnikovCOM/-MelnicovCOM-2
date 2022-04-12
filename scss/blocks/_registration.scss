@@ -1,15 +1,31 @@
 .registration__advantage-wpr {
     display: flex;
+
+    @include mobile {
+        flex-direction: column;
+    }
  }
  
  .registration__advantage {
      display: flex;
      flex-direction: column;
+
+     @include mobile {
+        width: 380px;
+        margin: 0 auto;
+     }
  }
  
  .registration__item-wrp {
      display: flex;
      flex-direction: column;
+ }
+
+ .registration__item-top {
+    @include mobile {
+        display: flex;
+        justify-content: center;
+     }
  }
  
  .registration__item-name {
@@ -19,6 +35,10 @@
      line-height: 19px;
      color: #222222;
      margin: 64px 0 0 0;
+
+     @include tablet {
+        margin: 40px 0 0 0;
+     }
  }
  
  .registration__item {
@@ -46,7 +66,10 @@
      margin: 31px 0 0 0;
      display: flex;
      align-items: center;
- 
+
+     @include mobile {
+        
+     }
  }
  
  .registration__list:focus {
@@ -74,6 +97,10 @@
      font-size: 14px;
      line-height: 17px;
      margin: 39px 0 96px 0;
+
+     @include mobile {
+        margin: 39px 0 40px 0;
+     }
  }
  
  .registration__buttom:hover {
@@ -98,7 +125,7 @@
      justify-content: space-between;
  }
  
- .female {
+ .registration__radio-female {
      margin: 0 0 0 20px;
  }
  
@@ -107,4 +134,21 @@
      height: 17px;
      border: 1px solid #A4A4A4;
      box-sizing: border-box;
+ }
+
+ .registration__radio-other-text {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+ }
+
+ .registration__radio-other {
+    margin: 0 0 0 20px;
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
  }

@@ -1,11 +1,19 @@
 .benefits {
     background-color: $black-bkg;
     min-height: 341px;
+
+    @include tablet {
+        min-height: 610px;
+    }
 }
 
 .benefits__list {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {
@@ -14,6 +22,10 @@
     flex-direction: column;
     padding: 103px 0 0 0;
     justify-content: space-evenly;
+
+    @include tablet {
+        padding: 48px 0 0 0;
+    }
 }
 
 .benefits__item-title {

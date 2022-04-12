@@ -1,6 +1,10 @@
 .socials {
     background-color: $black-bkg;
     height: 80px;
+
+    @include mobile {
+        height: 143px;
+    }
 }
 
 .socials__brand {
@@ -10,16 +14,31 @@
     line-height: 19px;
     color: $benefits-bkg;
     padding: 30px 0 30px 0; 
+
+    @include mobile {
+        padding: 0 0 9px 0; 
+    }
 }
 
 .socials__container {
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column-reverse;
+    }
 }
 
 .socials__list {
     display: flex;
     align-items: center;
+
+    @include mobile {
+        padding: 43px 0 40px;
+        justify-content: center;
+    }
 }
 
 .socials__item {
@@ -31,6 +50,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.socials-facebook {
+    @include mobile {
+        margin: 0;
+    }
 }
 
 .socials__item:hover {

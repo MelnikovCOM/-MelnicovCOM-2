@@ -11,4 +11,9 @@
     line-height: 29px;
     color: $dark_pink-color;
     padding: 59px 0 0 0;
+
+    @include mobile {
+        text-align: center;
+        padding: 60px 0 0 0;
+    }
 }

@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="./css/bootstrap-utilities.rtl.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +18,7 @@
     <header class="header">
         <div class="container header__wrp">
             <div class="header__container">
-                <a href="./product.html">
+                <a href="./cart.html">
                     <img class="header__logo" src="./img/logo.png" alt="logo">
                 </a>
                 <img class="header__search-icon" id="loupe" src="./img/loupe.svg" alt="loupe">
@@ -43,7 +46,7 @@
             <img class="header__nav-close" id="close" src="./img/close.svg" alt="close">
             <h2 class="header__nav-title">MENU</h2>
             <ul class="header__nav-list">
-                <li class="header__nav-item nav_item">
+                <li class="header__nav-item nav-item">
                     <h3 class="nav-item__title">MAN</h3>
                     <ul class="nav-item__list">
                         <li class="nav-item__item">Accessories</li>
@@ -79,64 +82,129 @@
     <main>
         <section class="home">
             <div class="container home__title-wpr">
-                <h1 class="home__title">SHOPPING CART</h1>
+                <h1 class="home__title">NEW ARRIVALS</h1>
+                <p class="home__list"> 
+                    <a class="home__list-text" href="./index.html">HOME /</a>
+                    <a class="home__list-text" href="#">MEN /</a>
+                    <span class="home__text">NEW ARRIVALS</span>
+                </p>
             </div>
         </section>
-        <div class="container things_shipping-wrp">
-            <section class="things">
-                <h2 class="visually-hidden">best things</h2>
-                <ul class="things__list">
-                    <li class="things__item">
-                        <img class="things__item-img" src="./img/man-things-2.jpg" alt="photo man">
-                        <div class="things__item-wrp">
-                            <img class="things__item-close" id="close" src="./img/close.svg" alt="close">
-                            <h3 class="things__item-title">MANGO  PEOPLE  T-SHIRT</h3>
-                            <p class="things__item-text">Price: <span class="things__item-price">$300</span></p>
-                            <p class="things__item-text">Color: Red</p>
-                            <p class="things__item-text">Size: Xl	</p>
-                            <p class="things__item-text">Quantity:</p>
+        <section class="novelties">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class=".novelties__inner carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="novelties__item">
+                            <img src="./img/woman-products-4.jpg" class="novelties__img" alt="...">
+                        </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="novelties__item">
+                        <img src="./img/woman-products-4.jpg" class="novelties__img" alt="...">
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="novelties__item">
+                        <img src="./img/woman-products-4.jpg" class="novelties__img" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <div class="collection__wrp">
+            <section class="container collection">
+                    <h2 class="collection__title">WOMEN COLLECTION</h2>
+                    <h3 class="collection__title-text">MOSCHINO CHEAP AND CHIC</h3>
+                    <p class="collection__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                    <p class="collection__text-price">$561</p>
+                    <hr class="collection__hr">
+                    <div class="collection__choice">
+                        <select class="collection__choice-list" name="select">
+                            <option class="collection__choice-item" value="value1" selected>CHOOSE COLOR</option>
+                            <option class="collection__choice-item" value="value2">CHOOSE COLOR</option>
+                            <option class="collection__choice-item" value="value3">COLOR GREY</option>
+                        </select>
+                        <select class="collection__choice-list" name="select">
+                            <option class="collection__choice-item" value="value1" selected>CHOOSE SIZE</option>
+                            <option class="collection__choice-item" value="value2">CHOOSE SIZE</option>
+                            <option class="collection__choice-item" value="value3">SIZE XXXL</option>
+                        </select>
+                        <select class="collection__choice-list" name="select">
+                            <option class="collection__choice-item" value="value1" selected>QUANTITY</option>
+                            <option class="collection__choice-item" value="value2">QUANTITY</option>
+                            <option class="collection__choice-item" value="value3">QUANTITY</option>
+                        </select>
+                    </div>
+                    <button class="collection__button"><i class="fa-solid fa-basket-shopping collection__button-icon"></i>Add to Cart</button>
+            </section>
+        </div>
+        <div class="collection__products-wrp">
+            <section class="collection__products container">
+                <ul class="products__list">
+                    <li class="products__item">
+                        <div class="products__item-information">
+                            <div class="products__item-cart">
+                                <img class="products__item-img" src="./img/man-products-3.jpg" alt="man-products">
+                                <button class="products__item-dutton">
+                                    <div class="products__item-basket">
+                                        <img class="products__item-bask" src="./img/basket-2.svg" alt="basket"> 
+                                        <span class="bask__text">Add to Cart</span>
+                                    </div>
+                                </button>
+                            </div>
+                            <h3 class="products__item-title">ellery x m'o capsule</h3>
+                            <p class="products__item-text">known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                            <p class="products__item-price">$52.00</p>
                         </div>
                     </li>
-                    <li class="things__item things__item-item">
-                        <img class="things__item-img" src="./img/man-things-4.jpg" alt="photo man">
-                        <div class="things__item-wrp">
-                            <img class="things__item-close" id="close" src="./img/close.svg" alt="close">
-                            <h3 class="things__item-title">MANGO  PEOPLE  T-SHIRT</h3>
-                            <p class="things__item-text">Price: <span class="things__item-price">$300</span></p>
-                            <p class="things__item-text">Color: Red</p>
-                            <p class="things__item-text">Size: Xl	</p>
-                            <p class="things__item-text">Quantity:</p>
+                    <li>
+                        <div class="products__item-information">
+                            <div class="products__item-cart">
+                                <img class="products__item-img" src="./img/man-products-2.jpg" alt="woman-products">
+                                <button class="products__item-dutton">
+                                        <div class="products__item-basket">
+                                            <img class="products__item-bask" src="./img/basket-2.svg" alt="basket"> 
+                                            <span class="bask__text">Add to Cart</span>
+                                        </div>
+                                </button>
+                            </div>
+                            <h3 class="products__item-title">ellery x m'o capsule</h3>
+                            <p class="products__item-text">known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                            <p class="products__item-price">$52.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="products__item-information">
+                            <div class="products__item-cart">
+                                <img class="products__item-img" src="./img/woman-products-3.jpg" alt="man-products-2">
+                                <button class="products__item-dutton">
+                                    <div class="products__item-basket">
+                                        <img class="products__item-bask" src="./img/basket-2.svg" alt="basket"> 
+                                        <span class="bask__text">Add to Cart</span>
+                                    </div>
+                                </button>
+                            </div>
+                            <h3 class="products__item-title">ellery x m'o capsule</h3>
+                            <p class="products__item-text">known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                            <p class="products__item-price">$52.00</p>
                         </div>
                     </li>
                 </ul>
-                <ul class="things__list-button">
-                    <li class="things__item-button">
-                        <button class="things__title-button">CLEAR SHOPPING CART</button>
-                    </li>
-                    <li class="things__item-button">
-                        <button class="things__title-button-two">CONTINUE SHOPPING</button>
-                    </li>
-                </ul>
             </section>
-            <section class="shipping">
-                <h2 class="shipping__title">SHIPPING ADRESS</h2>
-                <div class="shipping__item-wrp">
-                    <label for="city"></label>
-                    <input class="shipping__item" type="text" id="city" placeholder="Bangladesh">
-                    <label for="state"></label>
-                    <input class="shipping__item" type="text" id="state" placeholder="State">
-                    <label for="zip"></label>
-                    <input class="shipping__item" type="text"id="zip" placeholder="Postcode / Zip">
-                <button class="shipping__item-button">GET A QUOTE</button>
-                </div>
-                <div class="shipping__order">
-                    <p class="shipping__order-text">SUB TOTAL<span class="shipping__order-text-price">$900</span></p>
-                    <p class="shipping__order-title">GRAND TOTAL<span class="shipping__order-title-price">$900</span></p>
-                    <hr class="shipping__order-hr">
-                    <button class="shipping__order-button">PROCEED TO CHECKOUT</button>
-                </div>
-            </section>
-        </div>  
+        </div>
     </main>
     <footer>
         <section class="connection">
@@ -165,7 +233,7 @@
             <div class="container socials__container">
                 <p class="socials__brand">© 2021  brand  all rights reserved.</p>
                 <ul class="socials__list">
-                    <li class="socials__item">
+                    <li class="socials__item socials-facebook">
                         <a class="socials__item-facebook" href="#">
                             <svg class="networks" xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15">
                                 <path d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15847 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z"/>
@@ -198,7 +266,7 @@
         </section>
     </footer>
     <script>
-         let button = document.getElementById('burger');
+        let button = document.getElementById('burger');
         console.log(button)
         let navigation = document.getElementById('nav');
         button.addEventListener('click', function () {
@@ -211,5 +279,7 @@
             open.classList.toggle('header_loupe');
         });
     </script>
+    <script src="./css/js/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/a2da55c9b2.js" crossorigin="anonymous"></script>
 </body>
 </html>

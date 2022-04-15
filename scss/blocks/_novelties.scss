@@ -1,0 +1,18 @@
+.novelties {
+    height: 777px;
+    background: #F7F7F7;
+}
+
+.novelties__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column-reverse;
+}
+
+.novelties__img {
+    width: 597px;
+    height: 724px;
+    margin: 11px 0 0 0;
+    position: relative;
+}

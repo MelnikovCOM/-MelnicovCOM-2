@@ -4,6 +4,11 @@
     background: #F8F3F4;
 }
 
+.home__title-wpr {
+    display: flex;
+    justify-content: space-between;
+}
+
 .home__title {
     font-style: normal;
     font-weight: 400;
@@ -16,4 +21,27 @@
         text-align: center;
         padding: 60px 0 0 0;
     }
+}
+
+.home__list {
+    padding: 65px 0 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.home__list-text {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.home__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark_pink-color;
 }

@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="./css/bootstrap-utilities.rtl.css">
+    <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:ital@1&display=swap" rel="stylesheet">-->
     <title>Document</title>
 </head>
 <body>
@@ -77,47 +78,97 @@
         </nav>
     </header>
     <main>
-        <section class="brand">
-            <img class="brand__img" src="./img/man.jpg" alt="man">
-            <div class="brand__title-wrp">
-                <h1 class="brand__title brand__title-in">the brand <span class="brand__title-lower">of luxerious<span class="brand__titlt-pink" > fashion</span></span></h1>
+        <section class="home">
+            <div class="container home__title-wpr">
+                <h1 class="home__title focus-in-expand">NEW ARRIVALS</h1>
+                <p class="home__list"> 
+                    <a class="home__list-text" href="./index.html">HOME /</a>
+                    <a class="home__list-text" href="#">MEN /</a>
+                    <span class="home__text">NEW ARRIVALS</span>
+                </p>
             </div>
         </section>
-        <section class="sales">
-            <div class="container">
-                <h2 class="visually-hidden">sales</h2>
-                <ul class="sales__list">
-                    <li class="sales__item sales__item--woman">
-                        <div class="sales__item-centering">
-                            <p class="sales__item-text">30% off</p>
-                            <h3 class="sales__item-title">for women</h3>
+        <section class="catalogs container">
+            <h2 class="visually-hidden">choice of things</h2>
+            <div class="catalogs__wrp">
+                <div class="catalogs__filter-nav">
+                    <button class="catalogs__filter">FILTER</button>
+                    <nav class="catalogs__nav">
+                        <div class="catalogs__nav-wpr">
+                            <h3 class="catalogs__nav-filter">FILTER</h3>
+                            <button class="catalogs__nav-title">CATEGORY</button>
+                            <div class="catalogs__nav-item-wpr">
+                                <p class="catalogs__nav-item"><a  class="catalogs__nav-text" href="#">Accessories</a></p>
+                                <p class="catalogs__nav-item"><a class="catalogs__nav-text" href="#">Bags</a></p>
+                                <p class="catalogs__nav-item"><a class="catalogs__nav-text" href="#">Denim</a></p>
+                                <p class="catalogs__nav-item"><a class="catalogs__nav-text" href="#">Hoodies & Sweatshirts</a></p>
+                                <p class="catalogs__nav-item"><a class="catalogs__nav-text" href="#">Jackets & Coats</a></p>
+                                <p class="catalogs__nav-item"><a class="catalogs__nav-text" href="#">Polos</a></p>
+                                <p class="catalogs__nav-item"><a class="catalogs__nav-text" href="#">Shirts</a></p>
+                                <p class="catalogs__nav-item"><a class="catalogs__nav-text" href="#">Shoes</a></p>
+                                <p class="catalogs__nav-item"><a class="catalogs__nav-text" href="#">Sweaters & Knits</a></p>
+                                <p class="catalogs__nav-item"><a class="catalogs__nav-text" href="#">T-Shirts</a></p>
+                                <p class="catalogs__nav-item"><a class="catalogs__nav-text" href="#">Tanks</a></p>
+                            </div>
+                            <button class="catalogs__nav-title-wpr">BRAND</button>
+                            <button class="catalogs__nav-title-wpt">DESIGNER</button>
                         </div>
-                    </li>
-                    <li class="sales__item sales__item--man">
-                        <div class="sales__item-centering">
-                            <p class="sales__item-text">hot deal</p> 
-                            <h3 class="sales__item-title">for men</h3>
+                    </nav>
+                </div>
+                <div class="catalogs__choice-wrp">
+                    <div class="catalogs__choice">
+                        <button class="catalogs__choice-title">TRENDING NOW</button>
+                        <div class="catalogs__choice-box">
+                            <label class="catalogs__choice-text" for="new">
+                                <input type="checkbox" id="new">
+                            <span class="catalogs__choice-text-wpr">NEW</span> 
+                            </label>
+                            <label class="catalogs__choice-text" for="remainder">
+                                <input type="checkbox" id="remainder">
+                                <span class="catalogs__choice-text-wpr">REMAINDER</span> 
+                            </label>
                         </div>
-                    </li>
-                    <li class="sales__item sales__item--kids">
-                        <div class="sales__item-centering">
-                            <p class="sales__item-text">new arrivals</p>
-                            <h3 class="sales__item-title">for kids</h3>
+                    </div>
+                    <div class="catalogs__size">
+                        <button class="catalogs__size-title">SIZE</button>
+                        <div class="catalogs__size-box">
+                            <label class="catalogs__choice-text" for="xs">
+                                <input type="checkbox" id="xs">
+                                <span class="catalogs__choice-text-wpr">XS</span>
+                            </label>
+                            <label class="catalogs__choice-text" for="s">
+                                <input type="checkbox" id="s">
+                                <span class="catalogs__choice-text-wpr">S</span> 
+                            </label>
+                            <label class="catalogs__choice-text" for="m">
+                                <input type="checkbox" id="m">
+                                <span class="catalogs__choice-text-wpr">M</span> 
+                            </label>
+                            <label class="catalogs__choice-text" for="l">
+                                <input type="checkbox" id="l">
+                                <span class="catalogs__choice-text-wpr">L</span>
+                            </label>
                         </div>
-                    </li>
-                    <li class="sales__item sales__item--shoes">
-                        <div class="sales__item--centering">
-                            <p class="sales__item-text">luxirous & trendy</p>
-                            <h3 class="sales__item-title">accesories</h3>
+                    </div>
+                    <div class="catalogs__price">
+                        <button class="catalogs__price-title">PRICE</button>
+                        <div class="catalogs__price-box">
+                            <label class="catalogs__choice-text" for="price-1">
+                                <input type="checkbox" id="price-1">
+                                <span class="catalogs__choice-text-wpr">$104.00</span>
+                            </label>
+                            <label class="catalogs__choice-text" for="price-2">
+                                <input type="checkbox" id="price-2">
+                                <span class="catalogs__choice-text-wpr">$52.00</span>
+                            </label>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="products">
-            <div class="container">
-                <h2 class="products__title">fetured items</h2>
-                <p class="products__sub-title">Shop for items based on what we featured in this week</p>
+        <section class="catalogs__products">
+            <div class="container catalogs__products-wpr">
+                <h2 class="visually-hidden">fetured items</h2>
                 <ul class="products__list">
                     <li class="products__item">
                         <div class="products__item-information">
@@ -138,7 +189,7 @@
                     <li>
                         <div class="products__item-information">
                             <div class="products__item-cart">
-                                <img class="products__item-img" src="./img/woman-products.jpg" alt="woman-products">
+                                <img class="products__item-img" src="./img/man-products-4.jpg" alt="woman-products">
                                 <button class="products__item-dutton">
                                         <div class="products__item-basket">
                                             <img class="products__item-bask" src="./img/basket-2.svg" alt="basket"> 
@@ -186,7 +237,7 @@
                     <li>
                         <div class="products__item-information">
                             <div class="products__item-cart">
-                                <img class="products__item-img" src="./img/woman-products-2.jpg" alt="woman-products-2">
+                                <img class="products__item-img" src="./img/man-products-5.jpg" alt="woman-products-2">
                                 <button class="products__item-dutton">
                                     <div class="products__item-basket">
                                         <img class="products__item-bask" src="./img/basket-2.svg" alt="basket"> 
@@ -202,7 +253,55 @@
                     <li>
                         <div class="products__item-information">
                             <div class="products__item-cart">
-                                <img class="products__item-img" src="./img/woman-products-3.jpg" alt="woman-products-3">
+                                <img class="products__item-img" src="./img/man-products-6.jpg" alt="woman-products-3">
+                                <button class="products__item-dutton">
+                                    <div class="products__item-basket">
+                                        <img class="products__item-bask" src="./img/basket-2.svg" alt="basket"> 
+                                        <span class="bask__text">Add to Cart</span>
+                                    </div>
+                                </button>
+                            </div>
+                            <h3 class="products__item-title">ellery x m'o capsule</h3>
+                            <p class="products__item-text">known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                            <p class="products__item-price">$52.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="products__item-information">
+                            <div class="products__item-cart">
+                                <img class="products__item-img" src="./img/man-products-7.jpg" alt="woman-products-3">
+                                <button class="products__item-dutton">
+                                    <div class="products__item-basket">
+                                        <img class="products__item-bask" src="./img/basket-2.svg" alt="basket"> 
+                                        <span class="bask__text">Add to Cart</span>
+                                    </div>
+                                </button>
+                            </div>
+                            <h3 class="products__item-title">ellery x m'o capsule</h3>
+                            <p class="products__item-text">known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                            <p class="products__item-price">$52.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="products__item-information">
+                            <div class="products__item-cart">
+                                <img class="products__item-img" src="./img/man-products-8.jpg" alt="woman-products-3">
+                                <button class="products__item-dutton">
+                                    <div class="products__item-basket">
+                                        <img class="products__item-bask" src="./img/basket-2.svg" alt="basket"> 
+                                        <span class="bask__text">Add to Cart</span>
+                                    </div>
+                                </button>
+                            </div>
+                            <h3 class="products__item-title">ellery x m'o capsule</h3>
+                            <p class="products__item-text">known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                            <p class="products__item-price">$52.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="products__item-information">
+                            <div class="products__item-cart">
+                                <img class="products__item-img" src="./img/man-products-9.jpg" alt="woman-products-3">
                                 <button class="products__item-dutton">
                                     <div class="products__item-basket">
                                         <img class="products__item-bask" src="./img/basket-2.svg" alt="basket"> 
@@ -216,27 +315,61 @@
                         </div>
                     </li>
                 </ul>
-                <button class="products__item-browse">browse all product</button>
             </div>
         </section>
-        <section class="benefits">
-            <h2 class="visually-hidden">good information</h2>
-            <div class="container">
-                <ul class="benefits__list">
-                    <li class="benefits__item">
-                        <img class="benefits__item-img" src="./img/truck.svg" alt="truck">
-                        <h3 class="benefits__item-title">free delivery</h3>
-                        <p class="benefits__item-text">worldwide delivery on all. authorit tively morph next-generation innov tion with extensive models.</p>
+        <section class="catalogs__pages container">
+            <h2 class="visually-hidden">page numbers</h2>
+            <div class="catalogs__pages-wpr">
+                <ul class="catalogs__pages-item">
+                    <li>
+                        <button class="catalogs__pages-arrow">
+                            <img src="./img/left arrow.svg" alt="left arrow">
+                        </button>
                     </li>
-                    <li class="benefits__item">
-                        <img class="benefits__item-img" src="./img/percent.svg" alt="percent">
-                        <h3 class="benefits__item-title">sales & discounts</h3>
-                        <p class="benefits__item-text">worldwide delivery on all. authorit tively morph next-generation innov tion with extensive models.</p>
+                    <li>
+                        <button class="catalogs__pages-room">
+                            1
+                        </button>
                     </li>
-                    <li class="benefits__item">
-                        <img class="benefits__item-img" src="./img/crown.svg" alt="crown">
-                        <h3 class="benefits__item-title">quality assurance</h3>
-                        <p class="benefits__item-text">worldwide delivery on all. authorit tively morph next-generation innov tion with extensive models.</p>
+                    <li>
+                        <button class="catalogs__pages-room">
+                            2
+                        </button>
+                    </li>
+                    <li>
+                        <button class="catalogs__pages-room">
+                            3
+                        </button>
+                    </li>
+                    <li>
+                        <button class="catalogs__pages-room">
+                            4
+                        </button class="catalogs__pages-room">
+                    </li>
+                    <li>
+                        <button class="catalogs__pages-room">
+                            5
+                        </button>
+                    </li>
+                    <li>
+                        <button class="catalogs__pages-room">
+                            6
+                        </button>
+                    </li>
+                    <li>
+                        <button class="catalogs__pages-room-wrp">
+                            .....
+                        </button>
+                    </li>
+                    <li>
+                        <button class="catalogs__pages-room-wrp">
+                            20
+                        </button>
+                    </li>
+                    <li>
+                        <button class="catalogs__pages-arrow">
+                            <img src="./img/right arrow.svg" alt="right arrow">
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -269,7 +402,7 @@
             <div class="container socials__container">
                 <p class="socials__brand">© 2021  brand  all rights reserved.</p>
                 <ul class="socials__list">
-                    <li class="socials__item socials-facebook">
+                    <li class="socials__item">
                         <a class="socials__item-facebook" href="#">
                             <svg class="networks" xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15">
                                 <path d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15847 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z"/>
@@ -302,7 +435,7 @@
         </section>
     </footer>
     <script>
-        let button = document.getElementById('burger');
+         let button = document.getElementById('burger');
         console.log(button)
         let navigation = document.getElementById('nav');
         button.addEventListener('click', function () {
